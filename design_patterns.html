@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Patterns - Learn Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Design Patterns - Basics to Advanced</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="data_processing.html">Data Processing & Web Scraping</a></li>
+                <li><a href="api_frameworks.html">API Frameworks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>What are Design Patterns?</h2>
+            <p>Design patterns are typical solutions to common problems in software design. They are blueprints for solving issues that arise in coding.</p>
+        </section>
+
+        <section>
+            <h2>Basic Patterns</h2>
+            <p>Let’s start with a basic pattern: Singleton Pattern.</p>
+            <p>A Singleton ensures that a class has only one instance and provides a global point of access to it.</p>
+        </section>
+
+        <section>
+            <h2>Exercise: Implement Singleton in Python</h2>
+            <pre><code>class Singleton:
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Singleton, cls).__new__(cls)
+        return cls._instance
+
+singleton1 = Singleton()
+singleton2 = Singleton()
+
+print(singleton1 == singleton2)  # True</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Learn Python Course</p>
+    </footer>
+</body>
+</html>
+
